@@ -1,6 +1,7 @@
 site_name: BK Service Example
 nav:
     - Home: index.md
+    - Changelog: changelog.md
     - About: about.md
 theme:
   name: 'material'

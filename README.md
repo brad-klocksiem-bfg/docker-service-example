@@ -4,4 +4,4 @@ Demo repository for a GitOps Documentation Pipeline.  Please see [url] for docum
 
 # Updates
 
-.
+..
