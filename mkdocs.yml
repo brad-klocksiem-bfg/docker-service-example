@@ -1,4 +1,4 @@
-site_name: My Service Example
+site_name: BK Service Example
 nav:
     - Home: index.md
     - About: about.md
@@ -7,5 +7,5 @@ theme:
   favicon: 'img/favicon.ico'
   logo: 'img/logo.png'
 extra_css: ['stylesheets/extra.css']
-repo_name: 'gitops-doc-example'
-repo_url: 'https://github.com/brad-klocksiem-bfg/gitops-doc-example'
+repo_name: 'bk-service-example'
+repo_url: 'https://github.com/brad-klocksiem-bfg/bk-service-example'
