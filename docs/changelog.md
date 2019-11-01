@@ -9,6 +9,7 @@
 ### Bug Fixes
 
 * Reads in JSON manifests again
+* Added another fix for that thing
 
 ## Version 0.0.1
 
