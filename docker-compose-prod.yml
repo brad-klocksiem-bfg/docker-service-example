@@ -1,0 +1,48 @@
+version: '3.5'
+
+services:
+  django:
+    build: ./django
+    image: ${REGISTRY}:${VERSION}
+    env_file:
+      - ${ENV_FILE}
+    healthcheck:
+      interval: 1m30s
+      timeout: 10s
+      retries: 3
+      test: ["CMD-SHELL", "bash healthcheck.sh"]
+    deploy:
+      replicas: 3
+      resources:
+        limits:
+          cpus: "6.0"
+          memory: 4G
+      update_config:
+        parallelism: 1
+        delay: 15s
+      labels:
+        maintainer: "My Team <email@my-domain.com>"
+
+  nginx:
+    build: ./nginx
+    image: ${REGISTRY}:${VERSION}
+    env_file:
+      - ${ENV_FILE}
+    healthcheck:
+      interval: 1m30s
+      timeout: 10s
+      retries: 3
+      test: ["CMD-SHELL", "bash healthcheck.sh"]
+    deploy:
+      replicas: 3
+      resources:
+        limits:
+          cpus: "4.0"
+          memory: 756M
+      update_config:
+        parallelism: 1
+        delay: 10s
+      labels:
+        maintainer: "My Team <email@my-domain.com>"
+    depends_on:
+      - django

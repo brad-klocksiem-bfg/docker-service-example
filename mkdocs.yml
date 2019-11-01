@@ -1,0 +1,11 @@
+site_name: My Service Example
+nav:
+    - Home: index.md
+    - About: about.md
+theme:
+  name: 'material'
+  favicon: 'img/favicon.ico'
+  logo: 'img/logo.png'
+extra_css: ['stylesheets/extra.css']
+repo_name: 'gitops-doc-example'
+repo_url: 'https://github.com/brad-klocksiem-bfg/gitops-doc-example'
