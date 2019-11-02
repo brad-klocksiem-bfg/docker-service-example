@@ -1,6 +1,10 @@
 site_name: BK Service Example
 nav:
     - Home: index.md
+    - Getting Started: getting-started.md
+    - Architecture: architecture.md
+    - API: api.md
+    - Testing: testing.md
     - Changelog: changelog.md
     - About: about.md
 theme:
