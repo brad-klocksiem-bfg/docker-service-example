@@ -1,4 +1,4 @@
-site_name: BK Service Example
+site_name: Dockerized Service Example
 nav:
     - Home: index.md
     - Getting Started: getting-started.md
@@ -12,5 +12,5 @@ theme:
   favicon: 'img/favicon.ico'
   logo: 'img/logo.png'
 extra_css: ['stylesheets/extra.css']
-repo_name: 'bk-service-example'
-repo_url: 'https://github.com/brad-klocksiem-bfg/bk-service-example'
+repo_name: 'docker-service-example'
+repo_url: 'https://github.com/brad-klocksiem-bfg/docker-service-example'
